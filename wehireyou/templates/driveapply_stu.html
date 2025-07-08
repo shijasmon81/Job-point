@@ -1,0 +1,168 @@
+<html lang="zxx"><head>
+    <title>WeHireYou</title>
+    <!--meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Job-point Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+       Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design">
+    <script>
+       addEventListener("load", function () {
+           setTimeout(hideURLbar, 0);
+       }, false);
+       
+       function hideURLbar() {
+           window.scrollTo(0, 1);
+       }
+    </script>
+    <!--//meta tags ends here-->
+    <!--booststrap-->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <!--//booststrap end-->
+    <!-- font-awesome icons -->
+    <link href="../static/css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!--stylesheets-->
+    <link href="../static/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <!--//stylesheets-->
+    <link href="//fonts.googleapis.com/css?family=Mukta+Malar:400,500,600,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+ </head>
+ <body>
+<br><br>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div class="container register-form">
+            <div class="form">
+                <div class="note">
+                    <p>Verify Your Details</p>
+                </div>
+<form action="" method="post">
+
+
+    <div class="form-content">
+        <div class="row">
+            <div class="col-md-6">
+                
+                <div class="form-group">
+                    <input type="text" class="form-control" name="sname"  placeholder="Your Name"/>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control"  name="cname"  placeholder="College Name"/>
+                </div>
+            </div>
+
+            
+            <div class="col-md-6">
+                
+                <div class="form-group">
+                    <input type="text" class="form-control" name="course"  placeholder="Course"/>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control"  name="email"  placeholder="Email"/>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="hidden" class="form-control" name="internship"  value="{{obj.drive}}"/>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" class="form-control" name="organisation"  value="{{obj.postdate}}"/>
+                </div>
+            </div>
+            
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Verification</label>
+                    <select name="verify" class="form-control">
+                      <option value="agree">I verified </option>
+                      <option value="not agree">Not</option>
+                    </select>
+                    </div>
+              
+            </div>
+
+        </div>
+        <button type="submit" class="btnSubmit">Submit</button>
+    </div>
+            </form>
+            </div>
+        </div>
+        <style>
+            .note
+{
+    text-align: center;
+    height: 80px;
+    background: -webkit-linear-gradient(left, #0072ff, #240036);
+    color: #fff;
+    font-weight: bold;
+    line-height: 80px;
+}
+.form-content
+{
+    padding: 5%;
+    border: 1px solid #ced4da;
+    margin-bottom: 2%;
+}
+.form-control{
+    border-radius:1.5rem;
+}
+.btnSubmit
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background: #0062cc;
+    color: #fff;
+}
+        </style>
+        
+       
+       <!--//Register-->
+    <!--js working-->
+    <script src="../static/js/jquery-2.2.3.min.js"></script>
+    <!--//js working-->
+    <!-- start-smoth-scrolling -->
+    <script src="../static/js/move-top.js"></script>
+    <script src="../static/js/easing.js"></script>
+    <script>
+       jQuery(document).ready(function ($) {
+           $(".scroll").click(function (event) {
+               event.preventDefault();
+               $('html,body').animate({
+                   scrollTop: $(this.hash).offset().top
+               }, 900);
+           });
+       });
+    </script>
+    <!-- start-smoth-scrolling -->
+    <!-- here stars scrolling icon -->
+    <script>
+       $(document).ready(function () {
+       
+           var defaults = {
+               containerID: 'toTop', // fading element id
+               containerHoverID: 'toTopHover', // fading element hover id
+               scrollSpeed: 1200,
+               easingType: 'linear'
+           };
+           $().UItoTop({
+               easingType: 'easeOutQuart'
+           });
+       
+       });
+    </script>
+    <!-- //here ends scrolling icon -->
+    <!--bootstrap working-->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- //bootstrap working-->
+ 
+<a href="#" id="toTop" style="display: none;"><span id="toTopHover"></span>To Top</a></body></html>

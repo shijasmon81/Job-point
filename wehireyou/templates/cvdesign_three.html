@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Draco by @afnizarnur</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Draco is free PSD &amp; HTML template by @afnizarnur">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../static/R3/css/kube.min.css" />
+    <link rel="stylesheet" href="../static/R3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../static/R3/css/custom.min.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<style>
+		.intro h1:before {
+			/* Edit this with your name or anything else */
+			content: 'DRACO';
+		}
+	</style>
+</head>
+<body>
+	<!-- Navigation -->
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				
+			</header>
+		</div>
+	</div>
+
+	<!-- Introduction -->
+	<div class="intro section" id="about">
+		<div class="container">
+			<p>{{obj.name}}</p>
+			<div class="units-row units-split wrap">
+				
+				<p>
+					{{obj.email}}
+
+				<h3>{{obj.comments}}
+				</h3>
+				<h4>{{obj.address}}</h4>
+				<h4>{{obj.phone}}</h4>
+				<h4>{{obj.web}}</h4>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Work Experience -->
+	<div class="work section second" id="experiences">
+		<div class="container">
+			<h1>Work<br>Experiences</h1>
+			<ul class="work-list">
+				<li>{{obj.fromexp}}-{{obj.toexp}}</li>
+				<li>{{obj.company}}</li>
+				<li>{{obj.description}}</li>
+			</ul>
+			
+			
+		</div>
+	</div>
+
+	<div class="work section second" id="experiences">
+		<div class="container">
+			<h1>Education</h1>
+			<ul class="work-list">
+				<li>{{obj.fromedu}}-{{obj.toedu}}</li>
+				<li>{{obj.field}}</li>
+				<li>{{obj.degree}}</li>
+				<li>{{obj.school}}</li>
+			</ul>
+			
+			
+		</div>
+	</div>
+
+	<!-- Award & Achievements -->
+	<div class="award section second" id="achievements">
+		<div class="container">
+			<h1>Skills</h1>
+			<ul class="award-list list-flat">
+				<li>{{obj.skill}}</li>
+				<li>{{obj.proficiency}}</li>
+				
+			</ul>
+			
+			
+		</div>
+	</div>
+
+	<!-- Technical Skills -->
+	<div class="skills section second" id="skills">
+		<div class="container">
+			<h1>Technical<br>Skills</h1>
+			<ul class="skill-list list-flat">
+				<li>{{obj.hobbies}}</li>
+				
+			</ul>
+			
+			
+		</div>
+	</div>
+
+	
+
+	
+
+	<!-- Javascript -->
+	<script src="../static/R3/js/jquery.min.js"></script>
+	<script src="../static/R3/js/typed.min.js"></script>
+    <script src="../static/R3/js/kube.min.js"></script>
+    <script src="../static/R3/js/site.js"></script>
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		// Change to edit type effect
+		strings: ["far northern sky", "your galaxy", "everywhere"],
+
+		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+    </script>
+</body>
+</html>

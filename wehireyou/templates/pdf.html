@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Responsive Resume UI Design in HTML and CSS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../static/R1/styles.css">
+	<script src="pdf.js"></script>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+
+</head>
+<body>
+
+<div class="resume_wrapper" >
+	<div class="resume_left" id="invoice">
+		
+		<div class="resume_bottom">
+			<div class="resume_item resume_namerole">
+				<div class="name">{{obj.name}}</div>
+				<div class="role">{{obj.email}}</div>
+			</div>
+			<div class="resume_item resume_profile">
+				<div class="resume_title">Profile</div>
+				<div class="resume_info">{{obj.comments}}</div>
+			</div>
+			<div class="resume_item resume_address">
+				<div class="resume_title">Address</div>
+				<div class="resume_info">
+					{{obj.address}}
+				</div>
+			</div>
+			<div class="resume_item resume_contact">
+				<div class="resume_title">Contact</div>
+				<div class="resume_info">
+					<div class="resume_subtitle">Phone</div>
+					<div class="resume_subinfo">{{obj.phone}}</div>
+				</div>
+				<div class="resume_info">
+					<div class="resume_subtitle">Email</div>
+					<div class="resume_subinfo">{{obj.email}}</div>
+				</div>
+			</div>
+			<div class="resume_item resume_skills">
+				<div class="resume_title">Skills</div>
+				<div class="resume_info">
+					<div class="skills_list">
+						<div class="skills_left">{{obj.skill}}</div>
+						<div class="skills_bar">
+							<p>
+								<span style="width: 90%">{{obj.description}}</span>
+							</p>
+						</div>
+					</div>
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="resume_right">
+		<div class="resume_item resume_namerole">
+			<div class="name">{{obj.name}}</div>
+			<div class="role">{{obj.web}} </div>
+		</div>
+		<div class="resume_item resume_education">
+			<div class="resume_title">Education</div>
+			<div class="resume_info">
+				<div class="resume_data">
+					<div class="year">{{obj.fromedu}} - {{obj.toedu}}</div>
+					<div class="content">
+						<p>{{obj.field}}</p>
+						<p>{{obj.degree}}</p>
+						<p>{{obj.school}}</p>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+		<div class="resume_item resume_experience">
+			<div class="resume_title">Experience</div>
+			<div class="resume_info">
+				<div class="resume_data">
+					<div class="year">{{obj.fromexp}} - {{obj.toexp}}</div>
+					<div class="content">
+						<p>{{obj.title}}</p>
+						<p>{{obj.company}}</p>
+						<p>{{obj.description}}</p>
+					</div>
+				</div>
+				
+				
+				
+				
+			</div>
+		</div>
+		<div class="resume_item resmue_interests">
+			<div class="resume_title">Interests</div>
+			<div class="resume_info">
+				<div class="interests">
+					<div class="int_icon">
+						<i class="fas fa-volleyball-ball"></i>
+					</div>
+					<div class="int_data">{{obj.hobbies}}</div>
+				</div>
+				
+				
+			</div>
+		</div>
+
+		
+	</div>
+</div>
+
+
+    
+</body>
+</html>

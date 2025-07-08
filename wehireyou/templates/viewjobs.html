@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from colorlib.com/etc/tb/Table_Responsive_v2/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Jan 2022 06:35:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Table V02</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+
+<link rel="stylesheet" type="text/css" href="../static/tableview/vendor/bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="../static/tableview/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="../static/tableview/vendor/animate/animate.css">
+
+<link rel="stylesheet" type="text/css" href="../static/tableview/vendor/select2/select2.min.css">
+
+<link rel="stylesheet" type="text/css" href="../static/tableview/vendor/perfect-scrollbar/perfect-scrollbar.css">
+
+<link rel="stylesheet" type="text/css" href="../static/tableview/css/util.css">
+<link rel="stylesheet" type="text/css" href="../static/tableview/css/main.css">
+
+<meta name="robots" content="noindex, follow">
+<script>(function(w,d){!function(e,t,r,a,s){e[r]=e[r]||{},e[r].executed=[],e.zaraz={deferred:[]};var n=t.getElementsByTagName("title")[0];e[r].c=t.cookie,n&&(e[r].t=t.getElementsByTagName("title")[0].text),e[r].w=e.screen.width,e[r].h=e.screen.height,e[r].j=e.innerHeight,e[r].e=e.innerWidth,e[r].l=e.location.href,e[r].r=t.referrer,e[r].k=e.screen.colorDepth,e[r].n=t.characterSet,e[r].o=(new Date).getTimezoneOffset(),//
+e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([t,r]),e[s].push({"zaraz.start":(new Date).getTime()});var i=t.getElementsByTagName(a)[0],o=t.createElement(a);o.defer=!0,o.src="../../../cdn-cgi/zaraz/sd41d.js?"+new URLSearchParams(e[r]).toString(),i.parentNode.insertBefore(o,i)}(w,d,"zarazData","script","dataLayer");})(window,document);</script></head>
+<body>
+<div class="limiter">
+<div class="container-table100">
+<div class="wrap-table100">
+<div class="table">
+<div class="row header">
+<div class="cell">
+	Id
+</div>
+<div class="cell">
+	Title
+	</div>
+<div class="cell">
+	Company Name
+	</div>
+	<div class="cell">
+		Location
+		</div>
+		<div class="cell">
+			Pay
+			</div>
+			<div class="cell">
+				Summery Bullets
+				</div>
+<div class="cell">
+	Post
+</div>
+<div class="cell">
+	Status
+</div>
+<div class="cell">
+	Created Date
+</div>
+</div>
+
+{% for a in mat %}
+<div class="row">
+<div class="cell" data-title="Full Name">
+	{{a.id}}
+</div>
+<div class="cell" data-title="Age">
+	{{a.title}}
+</div>
+<div class="cell" data-title="Job Title">
+	{{a.company_name}}
+</div>
+<div class="cell" data-title="Location">
+	{{a.location}}
+</div>
+<div class="cell" data-title="Full Name">
+	{{a.pay}}
+	</div>
+	<div class="cell" data-title="Age">
+		{{a.summery_bullets}}
+	</div>
+	<div class="cell" data-title="Job Title">
+		{{a.post}}
+	</div>
+	<div class="cell" data-title="Location">
+		{{a.status}}
+	</div>
+	<div class="cell" data-title="Location">
+		{{a.created_date}}
+		</div>
+</div>
+{%endfor%}
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+<script src="../static/tableview/vendor/jquery/jquery-3.2.1.min.js"></script>
+
+<script src="../static/tableview/vendor/bootstrap/js/popper.js"></script>
+<script src="../static/tableview/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="../static/tableview/vendor/select2/select2.min.js"></script>
+
+<script src="../static/tableview/js/main.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6cb3e3247dd0dcfe","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from colorlib.com/etc/tb/Table_Responsive_v2/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Jan 2022 06:35:57 GMT -->
+</html>
