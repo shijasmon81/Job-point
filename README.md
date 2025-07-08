@@ -23,5 +23,3 @@ This project aims to build a **dynamic job portal** that aggregates job postings
 * **SQLite/MySQL/PostgreSQL** – For storing user and job data
 
 ---
-
-Let me know if you'd like a visual architecture diagram or a feature list with modules.
